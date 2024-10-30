@@ -17,3 +17,6 @@ Db folder
 
 db/
 pkg/
+
+#go sum
+go.sum
