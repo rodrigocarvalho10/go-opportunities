@@ -5,12 +5,17 @@ import (
 	"github.com/rodrigocarvalho10/go-opportunities/router"
 )
 
-func main() {
+var (
+	logger config.Logger
+)
 
+func main() {
+	logger = *config.GetLogger("main")
 	//Initialize Configs
 	err error := config.Init()
 	if err != nil {
-		panic(err)
+		logger.Errorf("config initialization error: %v", v ... : err)
+		return
 	}
 	// Initialize router
 	router.Initialize()
