@@ -4,6 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	docs "github.com/rodrigocarvalho10/go-opportunities/docs"
 	"github.com/rodrigocarvalho10/go-opportunities/handler"
+	swaggerfiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func InitializeRoutes(router *gin.Engine) {
