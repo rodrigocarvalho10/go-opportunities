@@ -2,13 +2,16 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
+	docs "github.com/rodrigocarvalho10/go-opportunities/docs"
 	"github.com/rodrigocarvalho10/go-opportunities/handler"
 )
 
 func InitializeRoutes(router *gin.Engine) {
 	//Initializer handler
 	handler.InitializerHandler()
-	v1 := router.Group("/api/v1")
+	basePath := "/api/v1"
+	docs.SwaggerInfo.BasePath = basePath
+	v1 := router.Group(basePath)
 	{
 		v1.GET("/opening", handler.ShowOpeningHandler)
 		v1.POST("/opening", handler.PostOpeningHandler)
