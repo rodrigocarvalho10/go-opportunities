@@ -16,6 +16,6 @@ func Init() error {
 
 func GetLogger(p string) *Logger {
 	//Initializer logger
-	logger = NewLogger(p)
+	logger := NewLogger(p)
 	return logger
 }
