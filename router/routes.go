@@ -21,5 +21,6 @@ func InitializeRoutes(router *gin.Engine) {
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		v1.GET("/openings", handler.GetOpeningsHandler)
 	}
+	//Initialize Swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
