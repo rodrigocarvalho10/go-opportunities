@@ -19,4 +19,3 @@ docs:
 	@swag init
 clean:
 	@rm -rf $(APP_NAME)
-	@rm -rf ./docs
