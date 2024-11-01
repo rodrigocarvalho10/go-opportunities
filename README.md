@@ -1,7 +1,7 @@
 
 # Go Opportunities
 
-Reposit?rio criado para aplicar o conte?do passado na live do @arthur404dev, procurando reproduzir todos os passos e evoluir a api com novas funcionalidades.
+Repositório criado para aplicar o conte?do passado na live do @arthur404dev, procurando reproduzir todos os passos e evoluir a api com novas funcionalidades.
 
 ## Ferramentas utilizadas
 
