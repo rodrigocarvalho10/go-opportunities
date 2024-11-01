@@ -9,6 +9,11 @@ var (
 	logger config.Logger
 )
 
+// @title           Example Api Go
+// @version         1.0
+// @description     This is a sample server go
+// @termsOfService  http://swagger.io/terms/
+
 func main() {
 	logger = *config.GetLogger("main")
 	//Initialize Configs
